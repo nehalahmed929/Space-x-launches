@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Space X Past Launches
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project fetches past launches from the Space X GraphQL API and displays launch information, including launch video, name, date, mission name, and rocket used. It is built using React and TypeScript.
+
+## Features
+
+- **GraphQL Client**: Apollo Client is used as the GraphQL client to interact with the Space X API.
+- **Pagination**: The project implements pagination to efficiently load and display a large number of past launches.
+- **Path Aliases**: Craco is used for path aliasing, enabling a simpler import path setup without the need to eject the application.
+- **Launch Videos**: Launch-related videos can be played directly on the page itself, providing a seamless user experience.
+- **Related Blog Links**: Clicking on a launch card opens a related blog post, providing additional information and context.
+
+## Further Improvement Points
+
+The project has the following improvement points:
+
+- **Automated Tests**: Write automated tests for both unit testing and integration testing to ensure the reliability and stability of the application.
+- **Routing System**: Introduce a routing system (e.g., React Router) to enable navigation between different pages and enhance user experience.
+- **Continuous Integration**: Implement a CI/CD pipeline to automate the build, testing, and deployment process, ensuring code quality and enabling seamless integration with other tools.
+- **Dockerization**: Dockerize the application for easier deployment and scalability.
+- **UI Improvements**: Improve the user interface by utilizing a theming library like Chakra UI or Material-UI to enhance the visual design and user experience.
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js: [https://nodejs.org](https://nodejs.org)
+- Yarn: [https://yarnpkg.com](https://yarnpkg.com)
+
+## Getting Started
+
+### 1. Clone the repository:
+
+```bash
+git clone <repository_url>
+```
+
+### 2. Install dependencies:
+
+```bash
+yarn install
+```
+
+### 3. Start the development server:
+
+```bash
+yarn start
+```
+
+Open your browser and visit http://localhost:3000 to see the application running.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run the following scripts:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **yarn start**: Runs the app in development mode.
+- **yarn build**: Builds the app for production.
+- **yarn test**: Launches the test runner.
