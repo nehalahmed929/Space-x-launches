@@ -39,7 +39,10 @@ const Cards: FC = () => {
       <div className="row">
         {data?.launchesPast?.map((item: LaunchItem) => {
           return (
-            <div className="col-12 col-sm-6 col-md-3">
+            <div
+              key={item.launch_date_utc}
+              className="col-12 col-sm-6 col-md-3"
+            >
               <VideoCard item={item} />
             </div>
           );
