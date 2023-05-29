@@ -41,7 +41,7 @@ const Cards: FC = () => {
           return (
             <div
               key={item.launch_date_utc}
-              className="col-12 col-sm-6 col-md-3"
+              className="col-12 col-sm-6 col-md-4 col-lg-3"
             >
               <VideoCard item={item} />
             </div>
